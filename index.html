@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Palm Hotel — Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-bg">
+      <svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <!-- Large palm frond left -->
+        <g transform="translate(-60,100)" opacity="0.8">
+          <path d="M100,700 Q80,500 200,300 Q250,200 400,100" stroke="#6B8F71" stroke-width="3" fill="none"/>
+          <path d="M100,700 Q60,480 50,300 Q40,200 150,80" stroke="#6B8F71" stroke-width="2" fill="none"/>
+          <path d="M100,700 Q150,520 300,380 Q380,300 500,200" stroke="#6B8F71" stroke-width="2" fill="none"/>
+          <path d="M200,300 Q230,280 280,310 Q250,340 200,300" fill="#4A7A52" opacity="0.6"/>
+          <path d="M220,250 Q260,220 320,240 Q290,275 220,250" fill="#4A7A52" opacity="0.5"/>
+          <path d="M180,350 Q160,310 200,290 Q210,330 180,350" fill="#4A7A52" opacity="0.5"/>
+          <path d="M300,380 Q340,350 390,370 Q360,405 300,380" fill="#4A7A52" opacity="0.4"/>
+        </g>
+        <!-- Right side botanical -->
+        <g transform="translate(800,0)" opacity="0.7">
+          <path d="M300,800 Q320,600 200,400 Q150,300 50,150" stroke="#6B8F71" stroke-width="3" fill="none"/>
+          <path d="M300,800 Q350,580 380,380 Q390,260 320,100" stroke="#6B8F71" stroke-width="2" fill="none"/>
+          <path d="M200,400 Q160,370 130,400 Q155,430 200,400" fill="#4A7A52" opacity="0.6"/>
+          <path d="M220,340 Q180,300 150,330 Q175,360 220,340" fill="#4A7A52" opacity="0.5"/>
+          <path d="M380,380 Q420,350 450,380 Q425,410 380,380" fill="#4A7A52" opacity="0.4"/>
+          <path d="M350,300 Q390,265 430,290 Q405,325 350,300" fill="#4A7A52" opacity="0.5"/>
+        </g>
+        <!-- Centre ornamental circle -->
+        <circle cx="600" cy="450" r="220" stroke="#C8973A" stroke-width="0.5" fill="none" opacity="0.4"/>
+        <circle cx="600" cy="450" r="240" stroke="#C8973A" stroke-width="0.3" fill="none" opacity="0.2"/>
+      </svg>
+    </div>
+
+    <div class="header-content">
+      <p class="hotel-eyebrow">Est. 2010 · Anekal, Karnataka</p>
+      <h1 class="hotel-name">
+        Green
+        <span>Palm</span>
+      </h1>
+      <div class="header-divider"></div>
+      <p class="header-tagline">Fine Dining &nbsp;·&nbsp; Pure Vegetarian</p>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Our Menu</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <div class="nav-wrapper">
+    <nav class="nav" role="tablist">
+      <button class="nav-btn active" onclick="showCategory('chinese', this)" role="tab">Chinese</button>
+      <span class="nav-dot"></span>
+      <button class="nav-btn" onclick="showCategory('north', this)" role="tab">North Indian</button>
+      <span class="nav-dot"></span>
+      <button class="nav-btn" onclick="showCategory('south', this)" role="tab">South Indian</button>
+      <span class="nav-dot"></span>
+      <button class="nav-btn" onclick="showCategory('desserts', this)" role="tab">Desserts</button>
+    </nav>
+  </div>
+
+  <!-- MENU -->
+  <main class="menu-wrapper">
+
+    <!-- Chinese -->
+    <div id="chinese" class="category active">
+      <div class="category-header">
+        <span class="category-label">Our Selection</span>
+        <h2 class="category-title">Chinese <em>Specialties</em></h2>
+        <div class="category-rule"></div>
+      </div>
+      <div class="dishes">
+        <div class="dish-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/id/292/600/400" alt="Veg Manchurian" loading="lazy">
+            <div class="card-img-overlay"></div>
+            <div class="veg-badge"><div class="veg-dot"></div></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-meta">
+              <h3 class="dish-name">Veg Manchurian</h3>
+              <span class="dish-price">₹ 180</span>
+            </div>
+            <div class="dish-divider"></div>
+            <p class="dish-desc">Crispy vegetable balls tossed in a tangy, spicy garlic sauce. Sweet, sour and mildly spicy — made with cabbage, carrot, beans and cornflour.</p>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/id/431/600/400" alt="Hakka Noodles" loading="lazy">
+            <div class="card-img-overlay"></div>
+            <div class="veg-badge"><div class="veg-dot"></div></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-meta">
+              <h3 class="dish-name">Hakka Noodles</h3>
+              <span class="dish-price">₹ 160</span>
+            </div>
+            <div class="dish-divider"></div>
+            <p class="dish-desc">Stir-fried noodles with colorful vegetables and soy sauce. Mildly spiced with a smoky wok flavor.</p>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/id/201/600/400" alt="Chilli Paneer" loading="lazy">
+            <div class="card-img-overlay"></div>
+            <div class="veg-badge"><div class="veg-dot"></div></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-meta">
+              <h3 class="dish-name">Chilli Paneer</h3>
+              <span class="dish-price">₹ 220</span>
+            </div>
+            <div class="dish-divider"></div>
+            <p class="dish-desc">Cottage cheese cubes stir-fried with bell peppers and onions in a bold Indo-Chinese sauce. Hot and tangy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- North Indian -->
+    <div id="north" class="category">
+      <div class="category-header">
+        <span class="category-label">Our Selection</span>
+        <h2 class="category-title">North Indian <em>Delights</em></h2>
+        <div class="category-rule"></div>
+      </div>
+      <div class="dishes">
+        <div class="dish-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/id/488/600/400" alt="Paneer Butter Masala" loading="lazy">
+            <div class="card-img-overlay"></div>
+            <div class="veg-badge"><div class="veg-dot"></div></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-meta">
+              <h3 class="dish-name">Paneer Butter Masala</h3>
+              <span class="dish-price">₹ 240</span>
+            </div>
+            <div class="dish-divider"></div>
+            <p class="dish-desc">Soft paneer in a rich, creamy tomato gravy with butter and aromatic spices. Mildly sweet and deeply flavorful.</p>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/id/670/600/400" alt="Dal Makhani" loading="lazy">
+            <div class="card-img-overlay"></div>
+            <div class="veg-badge"><div class="veg-dot"></div></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-meta">
+              <h3 class="dish-name">Dal Makhani</h3>
+              <span class="dish-price">₹ 180</span>
+            </div>
+            <div class="dish-divider"></div>
+            <p class="dish-desc">Slow-cooked black lentils and kidney beans in a creamy butter gravy. Rich, smoky and comforting.</p>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/id/312/600/400" alt="Butter Naan" loading="lazy">
+            <div class="card-img-overlay"></div>
+            <div class="veg-badge"><div class="veg-dot"></div></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-meta">
+              <h3 class="dish-name">Butter Naan</h3>
+              <span class="dish-price">₹ 60</span>
+            </div>
+            <div class="dish-divider"></div>
+            <p class="dish-desc">Fluffy leavened bread baked in tandoor and finished with butter. The perfect companion to any curry.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- South Indian -->
+    <div id="south" class="category">
+      <div class="category-header">
+        <span class="category-label">Our Selection</span>
+        <h2 class="category-title">South Indian <em>Classics</em></h2>
+        <div class="category-rule"></div>
+      </div>
+      <div class="dishes">
+        <div class="dish-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/id/431/600/400" alt="Masala Dosa" loading="lazy">
+            <div class="card-img-overlay"></div>
+            <div class="veg-badge"><div class="veg-dot"></div></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-meta">
+              <h3 class="dish-name">Masala Dosa</h3>
+              <span class="dish-price">₹ 140</span>
+            </div>
+            <div class="dish-divider"></div>
+            <p class="dish-desc">Crispy fermented rice crepe filled with spiced potato masala. Served with coconut chutney and sambar.</p>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/id/866/600/400" alt="Idli Vada" loading="lazy">
+            <div class="card-img-overlay"></div>
+            <div class="veg-badge"><div class="veg-dot"></div></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-meta">
+              <h3 class="dish-name">Idli Vada Combo</h3>
+              <span class="dish-price">₹ 120</span>
+            </div>
+            <div class="dish-divider"></div>
+            <p class="dish-desc">Soft steamed rice cakes and crispy lentil doughnuts served with sambar and coconut chutney.</p>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/id/1080/600/400" alt="Filter Coffee" loading="lazy">
+            <div class="card-img-overlay"></div>
+            <div class="veg-badge"><div class="veg-dot"></div></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-meta">
+              <h3 class="dish-name">Filter Coffee</h3>
+              <span class="dish-price">₹ 50</span>
+            </div>
+            <div class="dish-divider"></div>
+            <p class="dish-desc">Strong, aromatic decoction blended with hot milk and sugar. The quintessential South Indian experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <div id="desserts" class="category">
+      <div class="category-header">
+        <span class="category-label">Sweet Endings</span>
+        <h2 class="category-title">House <em>Desserts</em></h2>
+        <div class="category-rule"></div>
+      </div>
+      <div class="dishes">
+        <div class="dish-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/id/292/600/400" alt="Gulab Jamun" loading="lazy">
+            <div class="card-img-overlay"></div>
+            <div class="veg-badge"><div class="veg-dot"></div></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-meta">
+              <h3 class="dish-name">Gulab Jamun</h3>
+              <span class="dish-price">₹ 90</span>
+            </div>
+            <div class="dish-divider"></div>
+            <p class="dish-desc">Soft milk dumplings soaked in fragrant rose-water sugar syrup. Warm, sweet and melt-in-mouth.</p>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/id/201/600/400" alt="Rasmalai" loading="lazy">
+            <div class="card-img-overlay"></div>
+            <div class="veg-badge"><div class="veg-dot"></div></div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-meta">
+              <h3 class="dish-name">Rasmalai</h3>
+              <span class="dish-price">₹ 110</span>
+            </div>
+            <div class="dish-divider"></div>
+            <p class="dish-desc">Delicate cottage cheese patties in thickened sweetened milk, perfumed with saffron and crushed pistachios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">Green <span>Palm</span></div>
+      <p class="footer-tagline">Fine Dining · Pure Vegetarian</p>
+      <div class="footer-divider"></div>
+      <div class="footer-contact">
+        <div class="footer-contact-item">
+          <span class="contact-label">Address</span>
+          <span class="contact-value">123, MG Road, Anekal, Karnataka — 562106</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+91 98765 43210</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">info@greenpalmhotel.com</span>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 Green Palm Hotel. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
